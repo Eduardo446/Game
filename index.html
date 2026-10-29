@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cyberpunk Runner 2D</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- UI para Pantalla de Inicio / Game Over -->
+        <div id="overlay-ui">
+            <h1 id="ui-title">CYBER RUNNER</h1>
+            <p id="ui-subtitle">Presiona JUGAR o TOCA la pantalla para iniciar</p>
+            <button id="btn-start" onclick="startGame()">JUGAR</button>
+        </div>
+
+        <!-- Controles Táctiles para Móviles -->
+        <div id="touch-controls">
+            <div class="dpad">
+                <button class="btn-touch" id="btn-left">◀</button>
+                <button class="btn-touch" id="btn-right">▶</button>
+            </div>
+            <div class="actions">
+                <button class="btn-touch action-btn" id="btn-dash">DASH</button>
+                <button class="btn-touch action-btn" id="btn-jump">SALTO</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
